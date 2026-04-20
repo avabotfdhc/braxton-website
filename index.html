@@ -32,8 +32,12 @@
   <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
   <link rel="dns-prefetch" href="https://images.unsplash.com">
   
-  <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- Critical CSS inline -->
+  <style>:root{--color-primary:#FF6B35;--color-primary-dark:#E85A2B;--color-secondary:#4169E1;--color-dark:#1a1a2e;--color-gray-800:#2d2d44;--color-gray-700:#4a4a6a;--color-white:#ffffff;--color-cream:#fffbf5;--font-heading:'Fredoka','Comic Sans MS',cursive,sans-serif;--font-body:'Nunito',-apple-system,BlinkMacSystemFont,sans-serif;--space-xs:.25rem;--space-sm:.5rem;--space-md:1rem;--space-lg:1.5rem;--space-xl:2rem;--space-2xl:3rem;--space-3xl:4rem;--radius-sm:8px;--radius-md:12px;--radius-lg:16px;--radius-full:9999px;--shadow-sm:0 2px 4px rgba(0,0,0,0.05);--shadow-md:0 4px 12px rgba(0,0,0,0.08);--transition-fast:150ms ease}*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;font-size:16px}body{font-family:var(--font-body);font-size:1rem;line-height:1.6;color:var(--color-gray-800);background-color:var(--color-white);-webkit-font-smoothing:antialiased}img{max-width:100%;height:auto;display:block}a{color:var(--color-primary);text-decoration:none}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 var(--space-lg)}.announcement-bar{background:var(--color-primary);color:var(--color-white);padding:var(--space-sm) 0;text-align:center;font-size:.875rem}.header{background:var(--color-white);box-shadow:var(--shadow-sm);position:sticky;top:0;z-index:100}.header-inner{display:flex;align-items:center;justify-content:space-between;padding:var(--space-md) 0}.logo{display:flex;align-items:center;gap:var(--space-md);font-family:var(--font-heading);font-size:1.25rem;font-weight:700;color:var(--color-dark)}.logo img{width:60px;height:60px;border-radius:50%;object-fit:cover}.main-nav ul{display:flex;list-style:none;gap:var(--space-xl)}.main-nav a{color:var(--color-gray-800);font-weight:600;padding:var(--space-sm) 0;transition:color var(--transition-fast)}.main-nav a:hover{color:var(--color-primary)}.main-nav a.active{color:var(--color-primary)}.header-actions{display:flex;align-items:center;gap:var(--space-md)}.search-container{position:relative}.search-input{padding:var(--space-sm) var(--space-md);border:2px solid #e8e8f0;border-radius:var(--radius-full);width:200px;font-family:var(--font-body);font-size:.875rem}.cart-icon{color:var(--color-gray-800);position:relative}.mobile-menu-toggle{display:none;flex-direction:column;gap:4px;background:none;border:none;cursor:pointer;padding:var(--space-sm)}.mobile-menu-toggle span{width:24px;height:2px;background:var(--color-gray-800);border-radius:2px}.hero{background:linear-gradient(135deg,var(--color-dark) 0%,#2d1b69 50%,var(--color-secondary) 100%);color:var(--color-white);padding:var(--space-3xl) 0;position:relative;overflow:hidden}.hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}.hero .container{position:relative;z-index:1}.hero-content{max-width:100%;text-align:center}.hero h1{color:var(--color-white);font-family:var(--font-heading);font-size:clamp(2.25rem,7vw,4rem);font-weight:700;margin-bottom:var(--space-md);line-height:1.1;text-shadow:2px 2px 4px rgba(0,0,0,0.2)}.hero-tagline{font-size:clamp(1rem,3vw,1.375rem);margin-bottom:var(--space-md);opacity:.95}.hero p{font-size:clamp(1rem,2vw,1.125rem);margin-bottom:var(--space-xl);opacity:.9;max-width:600px;margin-left:auto;margin-right:auto}.hero-buttons{display:flex;gap:var(--space-md);justify-content:center;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;padding:var(--space-md) var(--space-xl);font-family:var(--font-heading);font-weight:600;font-size:1rem;border-radius:var(--radius-full);border:none;cursor:pointer;transition:all var(--transition-fast);text-decoration:none}.btn-primary{background:var(--color-primary);color:var(--color-white);box-shadow:0 4px 12px rgba(255,107,53,0.3)}.btn-primary:hover{background:var(--color-primary-dark);transform:translateY(-2px);box-shadow:0 6px 20px rgba(255,107,53,0.4)}.btn-white{background:var(--color-white);color:var(--color-dark)}.btn-white:hover{background:var(--color-cream);transform:translateY(-2px)}.btn-lg{padding:var(--space-md) var(--space-2xl);font-size:1.125rem}.mobile-nav{display:none;position:fixed;top:0;right:-100%;width:80%;max-width:300px;height:100vh;background:var(--color-white);z-index:200;padding:var(--space-xl);box-shadow:-4px 0 20px rgba(0,0,0,0.1);transition:right .3s ease}.mobile-nav.active{right:0}.mobile-nav-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:var(--space-xl)}.mobile-nav-close{background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--color-gray-800)}.mobile-nav ul{list-style:none;display:flex;flex-direction:column;gap:var(--space-md)}.mobile-nav a{color:var(--color-gray-800);font-weight:600;font-size:1.125rem;padding:var(--space-sm) 0;display:block}.mobile-overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:150}.mobile-overlay.active{display:block}@media(max-width:768px){.main-nav{display:none}.mobile-menu-toggle{display:flex}.search-container{display:none}.hero{padding:var(--space-2xl) 0}.hero-buttons{flex-direction:column;align-items:center}.btn-lg{width:100%;max-width:300px}}</style>
+  
+  <!-- Main CSS async load -->
+  <link rel="preload" href="css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
   
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
@@ -132,7 +136,7 @@
     <div class="container">
       <div class="header-inner">
         <a href="index.html" class="logo" aria-label="B's Wild And Wonder - Home">
-          <img src="images/logo_circular.jpg" alt="B's Wild And Wonder Logo" width="60" height="60" style="border-radius: 50%; object-fit: cover; aspect-ratio: 1/1;" loading="eager">
+          <img src="images/logo_circular.jpg" alt="B's Wild And Wonder Logo" width="60" height="60" style="border-radius: 50%; object-fit: cover; aspect-ratio: 1/1;" loading="eager" fetchpriority="high">
           <span class="logo-text">B's Wild And Wonder</span>
         </a>
 
@@ -211,28 +215,28 @@
       </div>
       <div class="grid grid-4">
         <a href="shop.html?category=clothing" class="category-card" onclick="gtag('event', 'click', {'event_category': 'category', 'event_label': 'clothing'});">
-          <img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=400&h=400&fit=crop&q=75" alt="Kids adventure clothing collection - durable shirts, pants, and outdoor wear" loading="lazy" width="400" height="400">
+          <img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=400&h=400&fit=crop&q=60&auto=format" alt="Kids adventure clothing collection - durable shirts, pants, and outdoor wear" loading="lazy" width="400" height="400" decoding="async">
           <div class="category-card-overlay">
             <h3>Clothing</h3>
             <span>20 Products</span>
           </div>
         </a>
         <a href="shop.html?category=hats" class="category-card" onclick="gtag('event', 'click', {'event_category': 'category', 'event_label': 'hats'});">
-          <img src="https://images.unsplash.com/photo-1572307480813-ceb0e59d8325?w=400&h=400&fit=crop&q=75" alt="Kids hats and headwear - sun protection and adventure style" loading="lazy" width="400" height="400">
+          <img src="https://images.unsplash.com/photo-1572307480813-ceb0e59d8325?w=400&h=400&fit=crop&q=60&auto=format" alt="Kids hats and headwear - sun protection and adventure style" loading="lazy" width="400" height="400" decoding="async">
           <div class="category-card-overlay">
             <h3>Hats & Headwear</h3>
             <span>15 Products</span>
           </div>
         </a>
         <a href="shop.html?category=plush" class="category-card" onclick="gtag('event', 'click', {'event_category': 'category', 'event_label': 'plush'});">
-          <img src="https://images.unsplash.com/photo-1558060370-d644479cb6f7?w=400&h=400&fit=crop&q=75" alt="Plush toys and stuffed animals for adventure companions" loading="lazy" width="400" height="400">
+          <img src="https://images.unsplash.com/photo-1558060370-d644479cb6f7?w=400&h=400&fit=crop&q=60&auto=format" alt="Plush toys and stuffed animals for adventure companions" loading="lazy" width="400" height="400" decoding="async">
           <div class="category-card-overlay">
             <h3>Plush Toys</h3>
             <span>15 Products</span>
           </div>
         </a>
         <a href="shop.html?category=accessories" class="category-card" onclick="gtag('event', 'click', {'event_category': 'category', 'event_label': 'accessories'});">
-          <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=400&fit=crop&q=75" alt="Kids adventure accessories - backpacks, water bottles, gear" loading="lazy" width="400" height="400">
+          <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=400&fit=crop&q=60&auto=format" alt="Kids adventure accessories - backpacks, water bottles, gear" loading="lazy" width="400" height="400" decoding="async">
           <div class="category-card-overlay">
             <h3>Accessories</h3>
             <span>10 Products</span>
@@ -263,7 +267,7 @@
     <div class="container">
       <div class="about-grid">
         <div class="about-image">
-          <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&h=500&fit=crop&q=75" alt="Braxton, 8-year-old founder of B's Wild And Wonder" loading="lazy" width="600" height="500">
+          <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&h=500&fit=crop&q=60&auto=format" alt="Braxton, 8-year-old founder of B's Wild And Wonder" loading="lazy" width="600" height="500" decoding="async">
         </div>
         <div class="about-text">
           <h2 id="braxton-story-heading">Meet Braxton</h2>
