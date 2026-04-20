@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | B's Wild And Wonder</title>
+  <meta name="description" content="Complete your purchase at B's Wild And Wonder. Secure checkout for all your adventure gear.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container">
+      🚚 FREE shipping on orders over $50!
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="18" fill="#1B6B7D"/>
+            <path d="M20 8L24 16H16L20 8Z" fill="white"/>
+            <path d="M12 20H28V24H12V20Z" fill="white"/>
+            <text x="20" y="32" text-anchor="middle" fill="white" font-size="10" font-weight="bold">B</text>
+          </svg>
+          <span class="logo-text">B's Wild And Wonder</span>
+        </a>
+
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <div class="search-container">
+            <input type="text" id="search-input" class="search-input" placeholder="Search products..." autocomplete="off">
+            <div id="search-results" class="search-results"></div>
+          </div>
+          <a href="cart.html" class="cart-icon" aria-label="Shopping cart">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 6h15l-1.5 9h-12z"></path>
+              <circle cx="9" cy="20" r="1"></circle>
+              <circle cx="18" cy="20" r="1"></circle>
+              <path d="M6 6L5 3H2"></path>
+            </svg>
+            <span class="cart-count" style="display: none;">0</span>
+          </a>
+          <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobile-nav">
+    <div class="mobile-nav-header">
+      <span class="logo-text">Menu</span>
+      <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">&times;</button>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </nav>
+  <div class="mobile-overlay"></div>
+
+  <!-- Checkout Section -->
+  <section class="section">
+    <div class="container">
+      <div id="checkout-content">
+        <div class="checkout-layout">
+          <!-- Checkout Form -->
+          <div class="checkout-form-section">
+            <h2>Checkout</h2>
+            <form id="checkout-form">
+              
+              <!-- Contact Information -->
+              <div class="form-section">
+                <h3>Contact Information</h3>
+                <div class="form-group">
+                  <label for="email">Email <span class="required">*</span></label>
+                  <input type="email" id="email" name="email" required placeholder="your@email.com">
+                </div>
+                <div class="form-group checkbox">
+                  <input type="checkbox" id="email-news" name="emailNews">
+                  <label for="email-news">Email me with news and offers</label>
+                </div>
+              </div>
+
+              <!-- Shipping Address -->
+              <div class="form-section">
+                <h3>Shipping Address</h3>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="first-name">First Name <span class="required">*</span></label>
+                    <input type="text" id="first-name" name="firstName" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="last-name">Last Name <span class="required">*</span></label>
+                    <input type="text" id="last-name" name="lastName" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="address">Address <span class="required">*</span></label>
+                  <input type="text" id="address" name="address" required placeholder="Street address">
+                </div>
+                <div class="form-group">
+                  <label for="address2">Apartment, suite, etc. (optional)</label>
+                  <input type="text" id="address2" name="address2" placeholder="Apt 4B">
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="city">City <span class="required">*</span></label>
+                    <input type="text" id="city" name="city" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="country">Country <span class="required">*</span></label>
+                    <select id="country" name="country" required>
+                      <option value="US">United States</option>
+                      <option value="CA">Canada</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="state">State/Province <span class="required">*</span></label>
+                    <select id="state" name="state" required>
+                      <option value="">Select...</option>
+                      <option value="AL">Alabama</option>
+                      <option value="AK">Alaska</option>
+                      <option value="AZ">Arizona</option>
+                      <option value="AR">Arkansas</option>
+                      <option value="CA">California</option>
+                      <option value="CO">Colorado</option>
+                      <option value="CT">Connecticut</option>
+                      <option value="DE">Delaware</option>
+                      <option value="FL">Florida</option>
+                      <option value="GA">Georgia</option>
+                      <option value="HI">Hawaii</option>
+                      <option value="ID">Idaho</option>
+                      <option value="IL">Illinois</option>
+                      <option value="IN">Indiana</option>
+                      <option value="IA">Iowa</option>
+                      <option value="KS">Kansas</option>
+                      <option value="KY">Kentucky</option>
+                      <option value="LA">Louisiana</option>
+                      <option value="ME">Maine</option>
+                      <option value="MD">Maryland</option>
+                      <option value="MA">Massachusetts</option>
+                      <option value="MI">Michigan</option>
+                      <option value="MN">Minnesota</option>
+                      <option value="MS">Mississippi</option>
+                      <option value="MO">Missouri</option>
+                      <option value="MT">Montana</option>
+                      <option value="NE">Nebraska</option>
+                      <option value="NV">Nevada</option>
+                      <option value="NH">New Hampshire</option>
+                      <option value="NJ">New Jersey</option>
+                      <option value="NM">New Mexico</option>
+                      <option value="NY">New York</option>
+                      <option value="NC">North Carolina</option>
+                      <option value="ND">North Dakota</option>
+                      <option value="OH">Ohio</option>
+                      <option value="OK">Oklahoma</option>
+                      <option value="OR">Oregon</option>
+                      <option value="PA">Pennsylvania</option>
+                      <option value="RI">Rhode Island</option>
+                      <option value="SC">South Carolina</option>
+                      <option value="SD">South Dakota</option>
+                      <option value="TN">Tennessee</option>
+                      <option value="TX">Texas</option>
+                      <option value="UT">Utah</option>
+                      <option value="VT">Vermont</option>
+                      <option value="VA">Virginia</option>
+                      <option value="WA">Washington</option>
+                      <option value="WV">West Virginia</option>
+                      <option value="WI">Wisconsin</option>
+                      <option value="WY">Wyoming</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="zip">ZIP/Postal Code <span class="required">*</span></label>
+                    <input type="text" id="zip" name="zip" required placeholder="12345">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone <span class="required">*</span></label>
+                  <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567">
+                </div>
+              </div>
+
+              <!-- Billing Address -->
+              <div class="form-section">
+                <h3>Billing Address</h3>
+                <div class="form-group checkbox">
+                  <input type="checkbox" id="same-as-shipping" name="sameAsShipping" checked>
+                  <label for="same-as-shipping">Same as shipping address</label>
+                </div>
+                <div id="billing-address-section" style="display: none;">
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="billing-first-name">First Name</label>
+                      <input type="text" id="billing-first-name" name="billingFirstName">
+                    </div>
+                    <div class="form-group">
+                      <label for="billing-last-name">Last Name</label>
+                      <input type="text" id="billing-last-name" name="billingLastName">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="billing-address">Address</label>
+                    <input type="text" id="billing-address" name="billingAddress">
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="billing-city">City</label>
+                      <input type="text" id="billing-city" name="billingCity">
+                    </div>
+                    <div class="form-group">
+                      <label for="billing-zip">ZIP</label>
+                      <input type="text" id="billing-zip" name="billingZip">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Payment -->
+              <div class="form-section">
+                <h3>Payment</h3>
+                <p style="font-size: 0.875rem; color: var(--color-gray-500); margin-bottom: var(--space-md);">All transactions are secure and encrypted.</p>
+                <div class="form-group">
+                  <label for="card-number">Card Number <span class="required">*</span></label>
+                  <input type="text" id="card-number" name="cardNumber" required placeholder="1234 5678 9012 3456" maxlength="19" oninput="formatCardNumber(this)">
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="card-expiry">Expiration (MM/YY) <span class="required">*</span></label>
+                    <input type="text" id="card-expiry" name="cardExpiry" required placeholder="MM/YY" maxlength="5">
+                  </div>
+                  <div class="form-group">
+                    <label for="card-cvc">Security Code <span class="required">*</span></label>
+                    <input type="text" id="card-cvc" name="cardCvc" required placeholder="123" maxlength="4">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="card-name">Name on Card <span class="required">*</span></label>
+                  <input type="text" id="card-name" name="cardName" required>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full btn-lg">Complete Order</button>
+            </form>
+          </div>
+
+          <!-- Order Summary -->
+          <div class="checkout-summary">
+            <h3>Order Summary</h3>
+            <div class="checkout-items" id="checkout-summary">
+              <!-- Populated by JavaScript -->
+            </div>
+            <div style="border-top: 1px solid var(--color-gray-200); padding-top: var(--space-md); margin-top: var(--space-md);">
+              <div class="summary-row">
+                <span>Subtotal</span>
+                <span id="checkout-subtotal">$0.00</span>
+              </div>
+              <div class="summary-row">
+                <span>Shipping</span>
+                <span id="checkout-shipping">$5.99</span>
+              </div>
+              <div class="summary-row total">
+                <span>Total</span>
+                <span id="checkout-total">$0.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Order Success -->
+      <div class="order-success" id="order-success">
+        <div class="order-success-icon">✓</div>
+        <h2>Order Confirmed!</h2>
+        <p>Thank you for your order! We've sent a confirmation email to you.<br>Your adventure gear will be on its way soon!</p>
+        <a href="shop.html" class="btn btn-primary btn-lg">Continue Shopping</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-text" style="font-size: 1.5rem; margin-bottom: var(--space-md);">B's Wild And Wonder</div>
+          <p>Adventure clothing and merchandise for kids ages 0-12.</p>
+        </div>
+        <div class="footer-column">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="shop.html?category=clothing">Clothing</a></li>
+            <li><a href="shop.html?category=hats">Hats</a></li>
+            <li><a href="shop.html?category=plush">Plush Toys</a></li>
+            <li><a href="shop.html?category=accessories">Accessories</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Mission</a></li>
+            <li><a href="#">Giving Back</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 B's Wild And Wonder. Built with ❤️ by Braxton.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B's Wild And Wonder | Adventure Clothing for Kids | Built by Braxton</title>
+  <meta name="description" content="B's Wild And Wonder - Adventure clothing and merchandise for kids ages 0-12. Built by 8-year-old Braxton, tested by kids. Quality gear that helps other kids have adventures. Shop now!">
+  <meta name="keywords" content="kids clothing, adventure gear, children's apparel, Braxton, B's Wild And Wonder, kids outdoor clothing, durable kids clothes">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="B's Wild And Wonder | Adventure Clothing for Kids">
+  <meta property="og:description" content="Adventure clothing and merchandise for kids ages 0-12. Built by Braxton, tested by kids. Every purchase helps another kid have an adventure.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bwildandwonder.com">
+  <meta property="og:image" content="https://bwildandwonder.com/images/og-image.jpg">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="B's Wild And Wonder | Built by Braxton">
+  <meta name="twitter:description" content="Adventure clothing for kids, tested by an 8-year-old entrepreneur. Every purchase helps another kid explore.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="images/logo_icon.png">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://bwildandwonder.com/#organization",
+        "name": "B's Wild And Wonder",
+        "url": "https://bwildandwonder.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://bwildandwonder.com/images/logo_circular.jpg"
+        },
+        "founder": {
+          "@type": "Person",
+          "name": "Braxton Dudgeon",
+          "description": "8-year-old entrepreneur and founder of B's Wild And Wonder"
+        },
+        "description": "Adventure clothing and merchandise for kids ages 0-12. Built by Braxton, tested by kids.",
+        "sameAs": [
+          "https://instagram.com/bwildandwonder",
+          "https://facebook.com/bwildandwonder",
+          "https://tiktok.com/@bwildandwonder"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://bwildandwonder.com/#website",
+        "url": "https://bwildandwonder.com",
+        "name": "B's Wild And Wonder",
+        "publisher": {
+          "@id": "https://bwildandwonder.com/#organization"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://bwildandwonder.com/#webpage",
+        "url": "https://bwildandwonder.com",
+        "name": "B's Wild And Wonder | Adventure Clothing for Kids",
+        "isPartOf": {
+          "@id": "https://bwildandwonder.com/#website"
+        },
+        "about": {
+          "@id": "https://bwildandwonder.com/#organization"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Who is Braxton?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Braxton is an 8-year-old entrepreneur who founded B's Wild And Wonder! He started the company because he noticed that kids' clothes were always falling apart and the good stuff was too expensive. He tests every product himself."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What makes B's Wild And Wonder different?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Every product is tested by Braxton himself on real adventures. If it doesn't hold up to climbing trees, building forts, and exploring the woods, we don't sell it. Plus, a portion of every sale helps kids in need experience the outdoors."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID', {
+      'send_page_view': true,
+      'anonymize_ip': true
+    });
+  </script>
+</head>
+<body>
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container">
+      🚚 <strong>Built Tough. Built with Heart.</strong> FREE shipping on orders over $50! Use code <strong>ADVENTURE</strong>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo" aria-label="B's Wild And Wonder - Home">
+          <img src="images/logo_circular.jpg" alt="B's Wild And Wonder Logo" width="60" height="60" style="border-radius: 50%; object-fit: cover;" loading="eager">
+          <span class="logo-text">B's Wild And Wonder</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <div class="search-container">
+            <input type="text" id="search-input" class="search-input" placeholder="Search products..." autocomplete="off" aria-label="Search products">
+            <div id="search-results" class="search-results"></div>
+          </div>
+          <a href="cart.html" class="cart-icon" aria-label="Shopping cart">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 6h15l-1.5 9h-12z"></path>
+              <circle cx="9" cy="20" r="1"></circle>
+              <circle cx="18" cy="20" r="1"></circle>
+              <path d="M6 6L5 3H2"></path>
+            </svg>
+            <span class="cart-count" style="display: none;">0</span>
+          </a>
+          <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <div class="mobile-nav-header">
+      <span class="logo-text">Menu</span>
+      <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">&times;</button>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </nav>
+  <div class="mobile-overlay"></div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Adventure Starts Here</h1>
+        <p class="hero-tagline"><strong>Built by Braxton. Tested by Kids. Made for Adventure.</strong></p>
+        <p>Clothing and gear for kids who explore, dream, and discover. Every stitch has a story. Every purchase helps another kid explore.</p>
+        <div class="hero-buttons">
+          <a href="shop.html" class="btn btn-primary btn-lg" onclick="gtag('event', 'click', {'event_category': 'cta', 'event_label': 'hero_shop_now'});">Shop Adventure Gear</a>
+          <a href="about.html" class="btn btn-white btn-lg" onclick="gtag('event', 'click', {'event_category': 'cta', 'event_label': 'hero_meet_braxton'});">Meet Braxton</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="section" aria-labelledby="categories-heading">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="categories-heading">Shop by Category</h2>
+        <p><em>"Fixing kids' clothes, one adventure at a time."</em> Everything your little adventurer needs.</p>
+      </div>
+      <div class="grid grid-4">
+        <a href="shop.html?category=clothing" class="category-card" onclick="gtag('event', 'click', {'event_category': 'category', 'event_label': 'clothing'});">
+          <img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=400&h=400&fit=crop" alt="Kids adventure clothing collection - durable shirts, pants, and outdoor wear" loading="lazy">
+          <div class="category-card-overlay">
+            <h3>Clothing</h3>
+            <span>20 Products</span>
+          </div>
+        </a>
+        <a href="shop.html?category=hats" class="category-card" onclick="gtag('event', 'click', {'event_category': 'category', 'event_label': 'hats'});">
+          <img src="https://images.unsplash.com/photo-1572307480813-ceb0e59d8325?w=400&h=400&fit=crop" alt="Kids hats and headwear - sun protection and adventure style" loading="lazy">
+          <div class="category-card-overlay">
+            <h3>Hats & Headwear</h3>
+            <span>15 Products</span>
+          </div>
+        </a>
+        <a href="shop.html?category=plush" class="category-card" onclick="gtag('event', 'click', {'event_category': 'category', 'event_label': 'plush'});">
+          <img src="https://images.unsplash.com/photo-1558060370-d644479cb6f7?w=400&h=400&fit=crop" alt="Plush toys and stuffed animals for adventure companions" loading="lazy">
+          <div class="category-card-overlay">
+            <h3>Plush Toys</h3>
+            <span>15 Products</span>
+          </div>
+        </a>
+        <a href="shop.html?category=accessories" class="category-card" onclick="gtag('event', 'click', {'event_category': 'category', 'event_label': 'accessories'});">
+          <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=400&fit=crop" alt="Kids adventure accessories - backpacks, water bottles, gear" loading="lazy">
+          <div class="category-card-overlay">
+            <h3>Accessories</h3>
+            <span>10 Products</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bestsellers Section -->
+  <section class="section" style="background: var(--color-cream);" aria-labelledby="bestsellers-heading">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="bestsellers-heading">Bestsellers</h2>
+        <p><em>"Kid-tested, kid-approved."</em> Our most loved adventure gear, handpicked by kids like you.</p>
+      </div>
+      <div class="product-grid" id="bestsellers-grid">
+        <!-- Populated by JavaScript -->
+      </div>
+      <div class="text-center" style="margin-top: var(--space-2xl); text-align: center;">
+        <a href="shop.html" class="btn btn-primary btn-lg" onclick="gtag('event', 'click', {'event_category': 'cta', 'event_label': 'view_all_products'});">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Braxton's Story Section -->
+  <section class="section" aria-labelledby="braxton-story-heading">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&h=500&fit=crop" alt="Braxton, 8-year-old founder of B's Wild And Wonder" loading="lazy">
+        </div>
+        <div class="about-text">
+          <h2 id="braxton-story-heading">Meet Braxton</h2>
+          <p class="story-quote"><em>"Hi! I'm Braxton, and I'm 8 years old. I started B's Wild And Wonder because I noticed something: kids' clothes were always falling apart, and the good stuff was way too expensive. So I fixed it."</em></p>
+          <p>I wanted to create clothes that could keep up with my adventures—<a href="shop.html?category=clothing">climbing trees</a>, building forts, exploring the woods—and I wanted other kids to be able to afford them too.</p>
+          <p><strong>Built by Braxton. Tested by kids.</strong> Every product is kid-approved because I'm the first one to try them out! <a href="about.html">Read my full story →</a></p>
+          <a href="about.html" class="btn btn-primary" onclick="gtag('event', 'click', {'event_category': 'cta', 'event_label': 'read_full_story'});">Read My Full Story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="mission-section" aria-labelledby="mission-heading">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="mission-heading">Our Mission</h2>
+        <p class="mission-tagline"><em>"Helping others live their best life—let's do it together!"</em></p>
+        <p><strong>Built to Give Back.</strong> Every purchase helps another kid explore.</p>
+      </div>
+      <div class="mission-grid">
+        <div class="mission-card">
+          <div class="mission-icon">🌲</div>
+          <h3>Quality First</h3>
+          <p><em>"If it breaks, we fix it."</em> Every item is tested by real kids on real adventures. If it doesn't hold up, we don't sell it.</p>
+        </div>
+        <div class="mission-card">
+          <div class="mission-icon">❤️</div>
+          <h3>Giving Back</h3>
+          <p><em>"Built to Give Back."</em> A portion of every sale helps kids in need experience the great outdoors.</p>
+        </div>
+        <div class="mission-card">
+          <div class="mission-icon">🚀</div>
+          <h3>Kid-Powered</h3>
+          <p><em>"Engineered by an 8-year-old."</em> Designed by a kid, for kids. We know what works because we're living it every day.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter-section" aria-labelledby="newsletter-heading">
+    <div class="container">
+      <h2 id="newsletter-heading">Join the Adventure Club</h2>
+      <p><em>"Adventure gear, engineered by an 8-year-old."</em> Get exclusive deals, new product alerts, and adventure tips!</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); gtag('event', 'subscribe', {'event_category': 'engagement', 'event_label': 'newsletter_signup'}); alert('Thanks for subscribing! 🎉 Welcome to the Adventure Club!'); this.reset();">
+        <input type="email" placeholder="Enter your email" required aria-label="Email address for newsletter">
+        <button type="submit" class="btn btn-secondary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo_circular.jpg" alt="B's Wild And Wonder" style="height: 60px; margin-bottom: var(--space-md); border-radius: 50%;">
+          <p><em>"Built tough. Built with heart."</em> Adventure clothing and merchandise for kids ages 0-12. Built by Braxton, tested by kids.</p>
+          <div class="social-links">
+            <a href="https://instagram.com/bwildandwonder" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">📷</a>
+            <a href="https://facebook.com/bwildandwonder" class="social-link" aria-label="Facebook" target="_blank" rel="noopener">📘</a>
+            <a href="https://tiktok.com/@bwildandwonder" class="social-link" aria-label="TikTok" target="_blank" rel="noopener">🎵</a>
+            <a href="https://pinterest.com/bwildandwonder" class="social-link" aria-label="Pinterest" target="_blank" rel="noopener">📌</a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="shop.html?category=clothing">Clothing</a></li>
+            <li><a href="shop.html?category=hats">Hats & Headwear</a></li>
+            <li><a href="shop.html?category=plush">Plush Toys</a></li>
+            <li><a href="shop.html?category=accessories">Accessories</a></li>
+            <li><a href="shop.html">All Products</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="shipping.html">Shipping Info</a></li>
+            <li><a href="returns.html">Returns</a></li>
+            <li><a href="size-guide.html">Size Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Braxton</a></li>
+            <li><a href="about.html">Our Mission</a></li>
+            <li><a href="about.html">Giving Back</a></li>
+            <li><a href="contact.html">Wholesale</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 B's Wild And Wonder. <em>"Every stitch has a story."</em> Built with ❤️ by Braxton.</p>
+        <div class="footer-payment">
+          <div class="payment-icon">VISA</div>
+          <div class="payment-icon">MC</div>
+          <div class="payment-icon">AMEX</div>
+          <div class="payment-icon">PP</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Track page view
+    gtag('event', 'page_view', {
+      'page_title': document.title,
+      'page_location': window.location.href
+    });
+    
+    // Populate bestsellers on homepage
+    document.addEventListener('DOMContentLoaded', function() {
+      const bestsellersGrid = document.getElementById('bestsellers-grid');
+      if (bestsellersGrid && typeof getBestsellers === 'function') {
+        const bestsellers = getBestsellers().slice(0, 8);
+        bestsellersGrid.innerHTML = bestsellers.map(product => `
+          <div class="product-card">
+            <a href="product.html?id=${product.id}" class="product-card-link" style="text-decoration: none;" onclick="gtag('event', 'select_content', {'content_type': 'product', 'item_id': '${product.id}'});">
+              <div class="product-image">
+                <img src="${product.image}" alt="${product.name}" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400/4169E1/FFFFFF?text=${encodeURIComponent(product.name)}'">
+                <span class="product-badge">Bestseller</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">${product.name}</h3>
+                <p class="product-price">$${product.price.toFixed(2)}</p>
+              </div>
+            </a>
+            <button class="btn btn-secondary btn-quick-add" onclick="gtag('event', 'add_to_cart', {'items': [{'id': '${product.id}', 'name': '${product.name}', 'price': ${product.price}}]}); quickAddToCart(${product.id});">Quick Add</button>
+          </div>
+        `).join('');
+      }
+    });
+  </script>
+</body>
+</html>

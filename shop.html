@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Adventure Gear for Kids | B's Wild And Wonder | Built by Braxton</title>
+  <meta name="description" content="Shop 60+ adventure products at B's Wild And Wonder. Kid-tested clothing, hats, plush toys & accessories for ages 0-12. Built by 8-year-old Braxton. Free shipping over $50!">
+  <meta name="keywords" content="kids adventure clothing, children's outdoor gear, kids hats, plush toys, kids accessories, Braxton, durable kids clothes">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Shop Adventure Gear for Kids | B's Wild And Wonder">
+  <meta property="og:description" content="60+ kid-tested adventure products. Built by Braxton, tested by kids. Free shipping over $50!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bwildandwonder.com/shop.html">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shop B's Wild And Wonder | Built by Braxton">
+  <meta name="twitter:description" content="Kid-tested adventure gear for ages 0-12. Every purchase helps another kid explore.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="images/logo_icon.png">
+  
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Shop Adventure Gear for Kids",
+    "description": "60+ kid-tested adventure products. Clothing, hats, plush toys & accessories.",
+    "url": "https://bwildandwonder.com/shop.html",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "B's Wild And Wonder",
+      "url": "https://bwildandwonder.com"
+    }
+  }
+  </script>
+  
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container">
+      🚚 <strong>Built Tough. Built with Heart.</strong> FREE shipping on orders over $50! Use code <strong>ADVENTURE</strong>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo" aria-label="B's Wild And Wonder - Home">
+          <img src="images/logo_circular.jpg" alt="B's Wild And Wonder Logo" width="60" height="60">
+          <span class="logo-text">B's Wild And Wonder</span>
+        </a>
+
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html" class="active">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <div class="search-container">
+            <input type="text" id="search-input" class="search-input" placeholder="Search products..." autocomplete="off">
+            <div id="search-results" class="search-results"></div>
+          </div>
+          <a href="cart.html" class="cart-icon" aria-label="Shopping cart">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 6h15l-1.5 9h-12z"></path>
+              <circle cx="9" cy="20" r="1"></circle>
+              <circle cx="18" cy="20" r="1"></circle>
+              <path d="M6 6L5 3H2"></path>
+            </svg>
+            <span class="cart-count" style="display: none;">0</span>
+          </a>
+          <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobile-nav">
+    <div class="mobile-nav-header">
+      <span class="logo-text">Menu</span>
+      <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">&times;</button>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </nav>
+  <div class="mobile-overlay"></div>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <h1>Shop Adventure Gear</h1>
+      <p><em>"Kid-tested, kid-approved."</em> 60 adventure-ready products for kids ages 0-12. <strong>Built by Braxton. Tested by Kids.</strong></p>
+    </div>
+  </div>
+
+  <!-- Shop Section -->
+  <section class="section" style="padding-top: var(--space-xl);">
+    <div class="container">
+      <div class="shop-layout">
+        <!-- Sidebar Filters -->
+        <aside class="filter-sidebar">
+          <div class="filter-group">
+            <h4>Categories</h4>
+            <div class="filter-options">
+              <label class="filter-option">
+                <input type="checkbox" name="category" value="clothing" checked>
+                <span>Clothing (20)</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="category" value="hats">
+                <span>Hats & Headwear (15)</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="category" value="plush">
+                <span>Plush Toys (15)</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="category" value="accessories">
+                <span>Accessories (10)</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <h4>Price Range</h4>
+            <div class="filter-options">
+              <label class="filter-option">
+                <input type="checkbox" name="price" value="0-20">
+                <span>$0 - $20</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="price" value="20-40">
+                <span>$20 - $40</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="price" value="40+">
+                <span>$40+</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <h4>Age Range</h4>
+            <div class="filter-options">
+              <label class="filter-option">
+                <input type="checkbox" name="age" value="0-2">
+                <span>0-2 years</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="age" value="2-5">
+                <span>2-5 years</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="age" value="5-8">
+                <span>5-8 years</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="age" value="8-12">
+                <span>8-12 years</span>
+              </label>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Product Grid -->
+        <div class="shop-main">
+          <div class="shop-toolbar">
+            <p id="product-count">Showing 60 products</p>
+            <select id="sort-select" class="sort-select">
+              <option value="featured">Featured</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="name">Name: A-Z</option>
+            </select>
+          </div>
+
+          <div class="product-grid" id="products-grid">
+            <!-- Products populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter-section">
+    <div class="container">
+      <h2>Join the Adventure Club</h2>
+      <p><em>"Adventure gear, engineered by an 8-year-old."</em> Get exclusive deals and be the first to know about new products!</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); gtag('event', 'subscribe', {'event_category': 'engagement'}); alert('Thanks for subscribing! 🎉 Welcome to the Adventure Club!'); this.reset();">
+        <input type="email" placeholder="Enter your email" required aria-label="Email for newsletter">
+        <button type="submit" class="btn btn-secondary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo_circular.jpg" alt="B's Wild And Wonder" style="height: 60px; margin-bottom: var(--space-md);">
+          <p><em>"Built tough. Built with heart."</em> Adventure clothing for kids ages 0-12. Built by Braxton, tested by kids.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="social-link" aria-label="Facebook">📘</a>
+            <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+            <a href="#" class="social-link" aria-label="Pinterest">📌</a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="shop.html?category=clothing">Clothing</a></li>
+            <li><a href="shop.html?category=hats">Hats & Headwear</a></li>
+            <li><a href="shop.html?category=plush">Plush Toys</a></li>
+            <li><a href="shop.html?category=accessories">Accessories</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="shipping.html">Shipping</a></li>
+            <li><a href="returns.html">Returns</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="about.html">Mission</a></li>
+            <li><a href="about.html">Giving Back</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 B's Wild And Wonder. <em>"Every stitch has a story."</em> Built with ❤️ by Braxton.</p>
+        <div class="footer-payment">
+          <div class="payment-icon">VISA</div>
+          <div class="payment-icon">MC</div>
+          <div class="payment-icon">AMEX</div>
+          <div class="payment-icon">PP</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Populate products on shop page
+    document.addEventListener('DOMContentLoaded', function() {
+      const productsGrid = document.getElementById('products-grid');
+      if (productsGrid && typeof getAllProducts === 'function') {
+        const products = getAllProducts();
+        productsGrid.innerHTML = products.map(product => `
+          <div class="product-card">
+            <a href="product.html?id=${product.id}" style="text-decoration: none;" onclick="gtag('event', 'select_content', {'content_type': 'product', 'item_id': '${product.id}'});">
+              <div class="product-image">
+                <img src="${product.image}" alt="${product.name}" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400/4169E1/FFFFFF?text=${encodeURIComponent(product.name)}'">
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">${product.name}</h3>
+                <p class="product-price">$${product.price.toFixed(2)}</p>
+              </div>
+            </a>
+            <button class="btn btn-secondary btn-quick-add" onclick="gtag('event', 'add_to_cart', {'items': [{'id': '${product.id}', 'name': '${product.name}'}]}); quickAddToCart(${product.id});">Add to Cart</button>
+          </div>
+        `).join('');
+      }
+    });
+  </script>
+</body>
+</html>
