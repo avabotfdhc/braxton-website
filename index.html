@@ -25,7 +25,12 @@
   <!-- Fonts - Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+  
+  <!-- Preconnect to image CDN -->
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="dns-prefetch" href="https://images.unsplash.com">
   
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css">
@@ -102,9 +107,9 @@
   }
   </script>
   
-  <!-- Google Analytics 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-  <script>
+  <!-- Google Analytics 4 - Deferred for performance -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script defer>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
@@ -127,7 +132,7 @@
     <div class="container">
       <div class="header-inner">
         <a href="index.html" class="logo" aria-label="B's Wild And Wonder - Home">
-          <img src="images/logo_circular.jpg" alt="B's Wild And Wonder Logo" width="60" height="60" style="border-radius: 50%; object-fit: cover;" loading="eager">
+          <img src="images/logo_circular.jpg" alt="B's Wild And Wonder Logo" width="60" height="60" style="border-radius: 50%; object-fit: cover; aspect-ratio: 1/1;" loading="eager">
           <span class="logo-text">B's Wild And Wonder</span>
         </a>
 
@@ -206,28 +211,28 @@
       </div>
       <div class="grid grid-4">
         <a href="shop.html?category=clothing" class="category-card" onclick="gtag('event', 'click', {'event_category': 'category', 'event_label': 'clothing'});">
-          <img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=400&h=400&fit=crop" alt="Kids adventure clothing collection - durable shirts, pants, and outdoor wear" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=400&h=400&fit=crop&q=75" alt="Kids adventure clothing collection - durable shirts, pants, and outdoor wear" loading="lazy" width="400" height="400">
           <div class="category-card-overlay">
             <h3>Clothing</h3>
             <span>20 Products</span>
           </div>
         </a>
         <a href="shop.html?category=hats" class="category-card" onclick="gtag('event', 'click', {'event_category': 'category', 'event_label': 'hats'});">
-          <img src="https://images.unsplash.com/photo-1572307480813-ceb0e59d8325?w=400&h=400&fit=crop" alt="Kids hats and headwear - sun protection and adventure style" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1572307480813-ceb0e59d8325?w=400&h=400&fit=crop&q=75" alt="Kids hats and headwear - sun protection and adventure style" loading="lazy" width="400" height="400">
           <div class="category-card-overlay">
             <h3>Hats & Headwear</h3>
             <span>15 Products</span>
           </div>
         </a>
         <a href="shop.html?category=plush" class="category-card" onclick="gtag('event', 'click', {'event_category': 'category', 'event_label': 'plush'});">
-          <img src="https://images.unsplash.com/photo-1558060370-d644479cb6f7?w=400&h=400&fit=crop" alt="Plush toys and stuffed animals for adventure companions" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1558060370-d644479cb6f7?w=400&h=400&fit=crop&q=75" alt="Plush toys and stuffed animals for adventure companions" loading="lazy" width="400" height="400">
           <div class="category-card-overlay">
             <h3>Plush Toys</h3>
             <span>15 Products</span>
           </div>
         </a>
         <a href="shop.html?category=accessories" class="category-card" onclick="gtag('event', 'click', {'event_category': 'category', 'event_label': 'accessories'});">
-          <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=400&fit=crop" alt="Kids adventure accessories - backpacks, water bottles, gear" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=400&fit=crop&q=75" alt="Kids adventure accessories - backpacks, water bottles, gear" loading="lazy" width="400" height="400">
           <div class="category-card-overlay">
             <h3>Accessories</h3>
             <span>10 Products</span>
@@ -258,7 +263,7 @@
     <div class="container">
       <div class="about-grid">
         <div class="about-image">
-          <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&h=500&fit=crop" alt="Braxton, 8-year-old founder of B's Wild And Wonder" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&h=500&fit=crop&q=75" alt="Braxton, 8-year-old founder of B's Wild And Wonder" loading="lazy" width="600" height="500">
         </div>
         <div class="about-text">
           <h2 id="braxton-story-heading">Meet Braxton</h2>
