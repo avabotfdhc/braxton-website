@@ -1,0 +1,15 @@
+{
+  "name": "b-wild-and-wonder",
+  "version": "1.0.0",
+  "description": "B's Wild And Wonder - Adventure clothing for kids",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "stripe": "^14.0.0"
+  },
+  "devDependencies": {
+    "vercel": "^33.0.0"
+  }
+}

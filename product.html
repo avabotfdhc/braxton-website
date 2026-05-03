@@ -122,6 +122,47 @@
             <a href="cart.html" class="btn btn-outline btn-lg">View Cart</a>
           </div>
 
+          <!-- Product Details Accordion -->
+          <div class="product-details-accordion" style="margin-top: var(--space-lg);">
+            <div class="accordion-item">
+              <button class="accordion-header" onclick="toggleAccordion(this)">
+                <span>📦 Product Details</span>
+                <span class="accordion-icon">+</span>
+              </button>
+              <div class="accordion-content" style="display: none;">
+                <ul style="padding-left: var(--space-lg); margin: var(--space-md) 0;">
+                  <li>Material: 100% soft cotton (pre-shrunk)</li>
+                  <li>Machine washable, tumble dry low</li>
+                  <li>Tagless for comfort</li>
+                  <li>Reinforced seams for durability</li>
+                  <li>Imported, printed in USA</li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-header" onclick="toggleAccordion(this)">
+                <span>🚚 Shipping & Returns</span>
+                <span class="accordion-icon">+</span>
+              </button>
+              <div class="accordion-content" style="display: none;">
+                <p style="margin: var(--space-md) 0;"><strong>Free shipping</strong> on orders over $50!<br>
+                Standard delivery: 5-10 business days<br>
+                <a href="returns.html">Easy 30-day returns</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Share -->
+          <div class="social-share" style="margin-top: var(--space-lg); padding-top: var(--space-lg); border-top: 1px solid var(--color-gray-200);">
+            <p style="font-size: 0.875rem; color: var(--color-gray-500); margin-bottom: var(--space-sm);">Share this product:</p>
+            <div class="share-buttons">
+              <a href="#" class="share-btn" onclick="shareProduct('facebook'); return false;" title="Share on Facebook">📘</a>
+              <a href="#" class="share-btn" onclick="shareProduct('twitter'); return false;" title="Share on Twitter">🐦</a>
+              <a href="#" class="share-btn" onclick="shareProduct('pinterest'); return false;" title="Pin on Pinterest">📌</a>
+              <a href="#" class="share-btn" onclick="shareProduct('email'); return false;" title="Share via Email">✉️</a>
+            </div>
+          </div>
+
           <div class="mt-lg" style="padding-top: var(--space-lg); border-top: 1px solid var(--color-gray-200);">
             <p style="font-size: 0.875rem; color: var(--color-gray-500);">
               <strong>Free shipping</strong> on orders over $50<br>

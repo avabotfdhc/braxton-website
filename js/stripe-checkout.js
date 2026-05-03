@@ -84,20 +84,51 @@ async function handleCheckoutSubmit(e) {
     const formData = new FormData(e.target);
     const email = formData.get('email');
     
-    // Create payment method
-    const {paymentMethod, error} = await stripe.createPaymentMethod({
-      type: 'card',
-      card: cardElement,
-      billing_details: {
-        name: formData.get('cardName'),
+    // Get cart data
+    const cart = getCartForCheckout();
+    
+    // Create payment intent on backend
+    const response = await fetch('/api/create-payment-intent', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        amount: cart.total,
         email: email,
-        address: {
-          line1: formData.get('address'),
-          line2: formData.get('address2'),
+        shippingAddress: {
+          firstName: formData.get('firstName'),
+          lastName: formData.get('lastName'),
+          address: formData.get('address'),
+          address2: formData.get('address2'),
           city: formData.get('city'),
           state: formData.get('state'),
-          postal_code: formData.get('zip'),
+          zip: formData.get('zip'),
           country: formData.get('country'),
+          phone: formData.get('phone'),
+        },
+      }),
+    });
+    
+    const { clientSecret, error: backendError } = await response.json();
+    
+    if (backendError) {
+      throw new Error(backendError);
+    }
+    
+    // Confirm card payment
+    const { paymentIntent, error } = await stripe.confirmCardPayment(clientSecret, {
+      payment_method: {
+        card: cardElement,
+        billing_details: {
+          name: formData.get('cardName'),
+          email: email,
+          address: {
+            line1: formData.get('address'),
+            line2: formData.get('address2'),
+            city: formData.get('city'),
+            state: formData.get('state'),
+            postal_code: formData.get('zip'),
+            country: formData.get('country'),
+          },
         },
       },
     });
@@ -106,44 +137,17 @@ async function handleCheckoutSubmit(e) {
       throw error;
     }
     
-    // Get cart data
-    const cart = getCartForCheckout();
-    
-    // Create order on backend (you'll need to implement this)
-    const orderData = {
-      paymentMethodId: paymentMethod.id,
-      email: email,
-      items: cart.items,
-      subtotal: cart.subtotal,
-      shipping: cart.shipping,
-      total: cart.total,
-      shippingAddress: {
-        firstName: formData.get('firstName'),
-        lastName: formData.get('lastName'),
-        address: formData.get('address'),
-        address2: formData.get('address2'),
-        city: formData.get('city'),
-        state: formData.get('state'),
-        zip: formData.get('zip'),
-        country: formData.get('country'),
-        phone: formData.get('phone'),
-      },
-    };
-    
-    // For now, simulate successful order
-    // In production, send orderData to your backend
-    console.log('Order data:', orderData);
-    
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    // Clear cart
-    clearCart();
-    
-    // Show success
-    document.getElementById('checkout-content').style.display = 'none';
-    document.getElementById('order-success').style.display = 'block';
-    window.scrollTo(0, 0);
+    if (paymentIntent.status === 'succeeded') {
+      // Clear cart
+      clearCart();
+      
+      // Show success
+      document.getElementById('checkout-content').style.display = 'none';
+      document.getElementById('order-success').style.display = 'block';
+      window.scrollTo(0, 0);
+    } else {
+      throw new Error('Payment failed. Please try again.');
+    }
     
   } catch (error) {
     console.error('Checkout error:', error);

@@ -512,6 +512,46 @@ window.onclick = function(event) {
   }
 }
 
+// Accordion toggle
+function toggleAccordion(button) {
+  const content = button.nextElementSibling;
+  const icon = button.querySelector('.accordion-icon');
+  
+  if (content.style.display === 'none') {
+    content.style.display = 'block';
+    icon.textContent = '−';
+  } else {
+    content.style.display = 'none';
+    icon.textContent = '+';
+  }
+}
+
+// Social share
+function shareProduct(platform) {
+  const url = encodeURIComponent(window.location.href);
+  const title = encodeURIComponent(document.title);
+  
+  let shareUrl;
+  switch(platform) {
+    case 'facebook':
+      shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+      break;
+    case 'twitter':
+      shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${title}`;
+      break;
+    case 'pinterest':
+      shareUrl = `https://pinterest.com/pin/create/button/?url=${url}&description=${title}`;
+      break;
+    case 'email':
+      shareUrl = `mailto:?subject=${title}&body=Check out this product: ${url}`;
+      break;
+  }
+  
+  if (shareUrl) {
+    window.open(shareUrl, '_blank', 'width=600,height=400');
+  }
+}
+
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
