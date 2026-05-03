@@ -487,6 +487,31 @@ function formatCardNumber(input) {
   }
 }
 
+// Size Guide Modal
+function openSizeGuide() {
+  const modal = document.getElementById('size-guide-modal');
+  if (modal) {
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closeSizeGuide() {
+  const modal = document.getElementById('size-guide-modal');
+  if (modal) {
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+}
+
+// Close modal when clicking outside
+window.onclick = function(event) {
+  const modal = document.getElementById('size-guide-modal');
+  if (event.target === modal) {
+    closeSizeGuide();
+  }
+}
+
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {

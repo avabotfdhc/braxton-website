@@ -243,20 +243,13 @@
               <!-- Payment -->
               <div class="form-section">
                 <h3>Payment</h3>
-                <p style="font-size: 0.875rem; color: var(--color-gray-500); margin-bottom: var(--space-md);">All transactions are secure and encrypted.</p>
+                <p style="font-size: 0.875rem; color: var(--color-gray-500); margin-bottom: var(--space-md);">All transactions are secure and encrypted via Stripe.</p>
                 <div class="form-group">
-                  <label for="card-number">Card Number <span class="required">*</span></label>
-                  <input type="text" id="card-number" name="cardNumber" required placeholder="1234 5678 9012 3456" maxlength="19" oninput="formatCardNumber(this)">
-                </div>
-                <div class="form-row">
-                  <div class="form-group">
-                    <label for="card-expiry">Expiration (MM/YY) <span class="required">*</span></label>
-                    <input type="text" id="card-expiry" name="cardExpiry" required placeholder="MM/YY" maxlength="5">
+                  <label>Card Information <span class="required">*</span></label>
+                  <div id="card-element" style="padding: var(--space-md); border: 1px solid var(--color-gray-300); border-radius: var(--radius-md);">
+                    <!-- Stripe Card Element will be inserted here -->
                   </div>
-                  <div class="form-group">
-                    <label for="card-cvc">Security Code <span class="required">*</span></label>
-                    <input type="text" id="card-cvc" name="cardCvc" required placeholder="123" maxlength="4">
-                  </div>
+                  <div id="card-errors" style="color: var(--color-error); font-size: 0.875rem; margin-top: var(--space-sm);" role="alert"></div>
                 </div>
                 <div class="form-group">
                   <label for="card-name">Name on Card <span class="required">*</span></label>
@@ -345,6 +338,7 @@
 
   <script src="js/products.js"></script>
   <script src="js/cart.js"></script>
+  <script src="js/stripe-checkout.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

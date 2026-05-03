@@ -102,7 +102,7 @@
           <p class="description" id="product-description">Product description goes here.</p>
           
           <div class="size-selector">
-            <label>Select Size</label>
+            <label>Select Size <a href="#size-guide" class="size-guide-link" onclick="openSizeGuide(); return false;">(Size Guide)</a></label>
             <div class="size-options" id="size-options">
               <!-- Populated by JavaScript -->
             </div>
@@ -125,9 +125,43 @@
           <div class="mt-lg" style="padding-top: var(--space-lg); border-top: 1px solid var(--color-gray-200);">
             <p style="font-size: 0.875rem; color: var(--color-gray-500);">
               <strong>Free shipping</strong> on orders over $50<br>
-              <strong>Easy returns</strong> within 30 days
+              <strong>Easy returns</strong> within 30 days<br>
+              <strong>Kid-tested</strong> for durability
             </p>
           </div>
+        </div>
+      </div>
+
+      <!-- Size Guide Modal -->
+      <div id="size-guide-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Size Guide</h2>
+            <button class="modal-close" onclick="closeSizeGuide()">&times;</button>
+          </div>
+          <div class="modal-body">
+            <h3>Clothing Sizes</h3>
+            <table class="size-table">
+              <tr><th>Size</th><th>Age</th><th>Height</th><th>Weight</th></tr>
+              <tr><td>0-3M</td><td>0-3 months</td><td>18-23 in</td><td>6-12 lbs</td></tr>
+              <tr><td>3-6M</td><td>3-6 months</td><td>23-27 in</td><td>12-17 lbs</td></tr>
+              <tr><td>6-12M</td><td>6-12 months</td><td>27-30 in</td><td>17-22 lbs</td></tr>
+              <tr><td>12-18M</td><td>12-18 months</td><td>30-33 in</td><td>22-27 lbs</td></tr>
+              <tr><td>18-24M</td><td>18-24 months</td><td>33-35 in</td><td>27-30 lbs</td></tr>
+              <tr><td>2T</td><td>2 years</td><td>33-36 in</td><td>30-33 lbs</td></tr>
+              <tr><td>3T</td><td>3 years</td><td>36-39 in</td><td>33-36 lbs</td></tr>
+              <tr><td>4T</td><td>4 years</td><td>39-42 in</td><td>36-40 lbs</td></tr>
+              <tr><td>5T</td><td>5 years</td><td>42-45 in</td><td>40-46 lbs</td></tr>
+              <tr><td>6</td><td>6 years</td><td>45-48 in</td><td>46-53 lbs</td></tr>
+              <tr><td>7</td><td>7 years</td><td>48-51 in</td><td>53-61 lbs</td></tr>
+              <tr><td>8</td><td>8 years</td><td>51-54 in</td><td>61-70 lbs</td></tr>
+              <tr><td>10</td><td>9-10 years</td><td>54-58 in</td><td>70-84 lbs</td></tr>
+              <tr><td>12</td><td>11-12 years</td><td>58-62 in</td><td>84-100 lbs</td></tr>
+            </table>
+            <p style="margin-top: 1rem; font-size: 0.875rem; color: var(--color-gray-500);">When in doubt, size up for longer wear!</p>
+          </div>
+        </div>
+      </div>
         </div>
       </div>
 
